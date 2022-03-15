@@ -25,5 +25,5 @@
 ## gh-pages 배포
 
 - `npm install gh-pages`
-- "deploy": ngh-pages -d dist
-- npm run deploy
+- "deploy": gh-pages -d dist
+- `npm run deploy`
