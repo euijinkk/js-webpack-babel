@@ -1,6 +1,6 @@
 ## webpack 관련 설치
 
-`npm install webpack webpack-cli html-webpack-plugin webpack-dev-server style-loader css-loader file-loader clean-webpack-plugin babel-loader @babel/preset-env -D`
+`npm install webpack webpack-cli html-webpack-plugin webpack-dev-server style-loader css-loader file-loader clean-webpack-plugin babel-loader @babel/preset-env @babel/plugin-transform-runtime -D`
 
 - webpack-cli : Command Line으로 webpack을 실행
 - html-webpack-plugin : HTML을 읽어온다. script tag를 삽입한다. (플러그인)
@@ -12,6 +12,7 @@
 - clean-webpack-plugin : build 시 사용하지 않은 파일을 제거해준다.
 - babel-loader : babel.config.js를 사용하지 않아도 babel을 처리해준다.
 - @babel/preset-env : 기본적인 babel 플러그인을 합쳐놓은 것
+- @babel/plugin-transform-runtime : babel에서 async/await 문법을 지원한다.
 
 ## build, start 명령어
 
@@ -25,5 +26,5 @@
 ## gh-pages 배포
 
 - `npm install gh-pages`
-- "deploy": gh-pages -d dist
+- "deploy": "gh-pages -d dist"
 - `npm run deploy`
