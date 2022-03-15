@@ -40,7 +40,10 @@ module.exports = {
       },
       {
         test: /\.jpg$/,
-        use: ["file-loader"],
+        loader: "file-loader",
+        options: {
+          name: "assets/[contenthash].[ext]",
+        },
       },
     ],
   },
